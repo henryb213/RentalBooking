@@ -11,10 +11,8 @@ export default function NavBarItems({ mobile = false }: NavBarItemsProps) {
   const pathname = usePathname();
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Garden Sharing", href: "/plots" },
-    { name: "Marketplace", href: "/marketplace" },
-    { name: "Task Management", href: "/tasks" },
-    // { name: "Tools Sharing", href: "/tools" },
+    { name: "Book", href: "/new-booking" },
+    { name: "Find a Booking", href: "/my-booking" },
   ];
 
   const isActiveRoute = (href: string) => {

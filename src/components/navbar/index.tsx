@@ -38,7 +38,7 @@ export default async function NavBar() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            {session?.user ? <ActionMenu /> : <OnboardButtons />}
+            <ActionMenu />
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             {/* Mobile menu button */}

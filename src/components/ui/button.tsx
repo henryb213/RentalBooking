@@ -19,6 +19,7 @@ export const buttonStyles = {
   },
 
   size: {
+    icon: "h-10 w-10 p-2",
     xs: "h-7 px-2 text-xs",
     sm: "h-8 px-3 text-sm",
     md: "h-9 px-4 text-sm",

@@ -2,3 +2,5 @@ No user accounts - email booking details
 Retrieve booking by ID provided in email
 Verify on frontend to prevent duplicate bookings
 Payment system - research needed
+Need to test on mobile - use Android emulator
+Use marketplace listing interface for bookings/payment
