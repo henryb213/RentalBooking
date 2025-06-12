@@ -1,0 +1,4 @@
+No user accounts - email booking details
+Retrieve booking by ID provided in email
+Verify on frontend to prevent duplicate bookings
+Payment system - research needed

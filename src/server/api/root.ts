@@ -10,6 +10,7 @@ import { userRouter } from "./routers/user";
 import { folderRouter } from "./routers/folders";
 import { imageRouter } from "./routers/image";
 import { notificationRouter } from "./routers/notification";
+import { bookingRouter } from "./routers/booking";
 
 /**
  * This is the primary router for your server.
@@ -27,6 +28,7 @@ export const appRouter = createTRPCRouter({
   marketplace: marketplaceRouter,
   image: imageRouter,
   notification: notificationRouter,
+  booking: bookingRouter,
 });
 
 // export type definition of API

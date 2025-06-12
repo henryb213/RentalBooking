@@ -5,4 +5,5 @@ export * from "./task.model";
 export * from "./listing.model";
 export * from "./notification.model";
 export * from "./folder.model";
-export * from "./preference.model";
+export * from "./preference.model"
+export * from "./booking.model";
