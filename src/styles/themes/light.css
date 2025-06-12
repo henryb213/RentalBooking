@@ -1,0 +1,20 @@
+[data-theme="light"] {
+  --primary: 131 46% 32%; /* Vibrant green */
+  --primary-foreground: 132 30% 99%; /* Light text for primary */
+
+  --secondary: 129 22% 86%; /* Light green */
+  --secondary-foreground: 131 5% 16%; /* Dark text for secondary */
+
+  --destructive: 0 84.2% 60.2%; /* Red */
+  --destructive-foreground: 210 40% 98%; /* Light text for destructive */
+
+  --accent: 210 40% 96.1%; /* Similar to secondary for subtle highlights */
+  --accent-foreground: 222.2 47.4% 11.2%; /* Dark text for accent */
+
+  --background: hsl(0 0% 99%); /* Pure white */
+  --card-background: hsl(0 0% 100%);
+  --input: 214.3 31.8% 91.4%; /* Light gray for borders */
+
+  /* Ring colors for focus states */
+  --ring: 222.2 47.4% 11.2%;
+}

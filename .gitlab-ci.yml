@@ -1,0 +1,49 @@
+image: node:22
+
+stages:
+  - lint
+  - build
+  - test
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+lint:
+  stage: lint
+  script:
+    - npm ci
+    - FILE_PATTERNS='.*\.(js|jsx|ts|tsx)$'
+    - CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT $CI_MERGE_REQUEST_DIFF_BASE_SHA...$CI_COMMIT_SHA | grep -E "$FILE_PATTERNS" || true)
+    - |
+      if [ -n "$CHANGED_FILES" ]; then
+        echo "Running ESLint on:"
+        echo "$CHANGED_FILES"
+        npx eslint $(echo $CHANGED_FILES)
+      else
+        echo "No matching files changed, skipping lint."
+      fi
+  only:
+    - merge_requests
+
+build-check:
+  stage: build
+  script:
+    - npm ci
+    - npx tsc --noEmit
+  only:
+    - merge_requests
+    - main
+
+# test:
+#   stage: test
+#   script:
+#     - npm ci
+#     - npm test
+#   only:
+#     - merge_requests
+#     - main
+
+variables:
+  GIT_DEPTH: 0
