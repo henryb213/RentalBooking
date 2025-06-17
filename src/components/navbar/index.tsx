@@ -19,11 +19,11 @@ export default async function NavBar() {
       as="nav"
       className="top-0 z-40 w-full border-b border-secondary-foreground/10 bg-cardBackground drop-shadow-md sm:fixed sm:h-16"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-4">
         <div className="flex h-16 justify-between">
           <div className="flex">
             <div className="flex flex-shrink-0 items-center">
-              <Link href="/">
+                <Link href="/">
                 <Image
                   alt="New Leaf"
                   src="/logo.png"
@@ -31,7 +31,7 @@ export default async function NavBar() {
                   width={256}
                   height={256}
                 />
-              </Link>
+                </Link>
             </div>
             <div className="hidden sm:ml-2 sm:flex sm:space-x-8">
               <NavBarItems />
@@ -57,6 +57,7 @@ export default async function NavBar() {
           </div>
         </div>
       </div>
+      
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 pb-3 pt-2">

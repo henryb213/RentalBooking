@@ -4,3 +4,12 @@ Verify on frontend to prevent duplicate bookings
 Payment system - research needed
 Need to test on mobile - use Android emulator
 Use marketplace listing interface for bookings/payment
+
+Book
+Bring up calendar popup
+Check booking is valid in backend
+If valid go to booking/payment confirmation. Pass in booking start/end as params. Verify again on submit
+
+Find a booking
+Bring up popup to enter booking number
+If valid booking, bring up page for booking
